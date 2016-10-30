@@ -11,4 +11,19 @@
     <string name="pref_location_key" translatable="false">location</string>
     <string name="pref_location_default" translatable="false">734077</string>
 
+    <string name="pref_temp_units_label">Temperature Units</string>
+    <string name="pref_temp_units_key" translatable="false">tempunit</string>
+    <string name="pref_temp_units_celcius" translatable="false">C</string>
+    <string name="pref_temp_units_fahren" translatable="false">F</string>
+
+    <string-array name="pref_temp_units_entries">
+        <item>Celcius (Metric)</item>
+        <item>Fahrenheit (Imperial)</item>
+    </string-array>
+
+    <string-array name="pref_temp_units_entryValues">
+        <item>C</item>
+        <item>F</item>
+    </string-array>
+
 </resources>
