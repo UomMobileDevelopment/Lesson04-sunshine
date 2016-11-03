@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditTextPreference
+    <ListPreference
         android:title="@string/pref_location_label"
         android:key="@string/pref_location_key"
         android:defaultValue="@string/pref_location_default"
-        android:inputType="text"
-        android:singleLine="true"
-        ></EditTextPreference>
+        android:entries="@array/pref_location_entries"
+        android:entryValues="@array/pref_location_entryValues"
+        ></ListPreference>
 
     <ListPreference
         android:key="@string/pref_temp_units_key"

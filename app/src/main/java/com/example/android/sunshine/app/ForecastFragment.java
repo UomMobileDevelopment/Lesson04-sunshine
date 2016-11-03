@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,6 +32,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ForecastFragment extends Fragment {
@@ -71,6 +73,17 @@ public class ForecastFragment extends Fragment {
     private void updateWeather() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String location = prefs.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));
+
+        String[] cityCodeArray = getResources().getStringArray(R.array.pref_location_entryValues);
+        List<String> cityCodeList = Arrays.asList(cityCodeArray);
+        int indexOfCityCode = cityCodeList.indexOf(location);
+
+        List<String> cityNames = Arrays.asList(getResources().getStringArray(R.array.pref_location_entries));
+
+        String cityName = cityNames.get(indexOfCityCode);
+        Toast toast = Toast.makeText(getActivity(), "Showing weather for "+cityName+" ("+location+")", Toast.LENGTH_LONG);
+        toast.show();
+
         FetchWeatherTask weatherTask = new FetchWeatherTask();
         weatherTask.execute(location);
     }
@@ -157,6 +170,7 @@ public class ForecastFragment extends Fragment {
 
             // These are the names of the JSON objects that need to be extracted.
             final String OWM_LIST = "list";
+            final String OWM_CITY = "city";
             final String OWM_WEATHER = "weather";
             final String OWM_TEMPERATURE = "temp";
             final String OWM_MAX = "max";
@@ -164,6 +178,7 @@ public class ForecastFragment extends Fragment {
             final String OWM_DESCRIPTION = "main";
 
             JSONObject forecastJson = new JSONObject(forecastJsonStr);
+            JSONObject city = forecastJson.getJSONObject(OWM_CITY);
             JSONArray weatherArray = forecastJson.getJSONArray(OWM_LIST);
 
             // OWM returns daily forecasts based upon the local time of the city that is being
