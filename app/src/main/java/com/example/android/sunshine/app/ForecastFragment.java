@@ -76,7 +76,6 @@ public class ForecastFragment extends Fragment {
         String location = prefs.getString(getString(R.string.pref_location_list_key), getString(R.string.pref_location_default));
         FetchWeatherTask weatherTask = new FetchWeatherTask();
         weatherTask.execute(location);
-
         showToast(location);
     }
 

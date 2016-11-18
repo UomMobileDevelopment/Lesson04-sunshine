@@ -16,6 +16,8 @@
     <string name="pref_temp_units_celcius" translatable="false">C</string>
     <string name="pref_temp_units_fahren" translatable="false">F</string>
 
+    <string name="action_share">Share</string>
+
     <string-array name="pref_temp_units_entries">
         <item>Celcius (Metric)</item>
         <item>Fahrenheit (Imperial)</item>
@@ -29,138 +31,144 @@
     <string name="pref_location_list_key" translatable="false">location_list</string>
 
     <string-array name="pref_cities_names">
-        <item>Alexandroupoli</item>
-        <item>Pallini</item>
-        <item>Trikala</item>
-        <item>Kallithea</item>
-        <item>Patra</item>
-        <item>Chania</item>
-        <item>Ioannina</item>
-        <item>Lamia</item>
-        <item>Korinthos</item>
-        <item>Kalamata</item>
         <item>Aigaleo</item>
-        <item>Rodos</item>
-        <item>Kalymnos</item>
-        <item>Tripoli</item>
+        <item>Alexandroupoli</item>
+        <item>Amfissa</item>
+        <item>Argos Orestiko</item>
         <item>Arta</item>
-        <item>Pyrgos</item>
-        <item>Pylos</item>
+        <item>Astros</item>
+        <item>Athens</item>
+        <item>Chalkida</item>
+        <item>Chania</item>
+        <item>Deskati</item>
+        <item>Didymoteicho</item>
+        <item>Drama</item>
+        <item>Eretria</item>
+        <item>Filiatra</item>
+        <item>Florina</item>
+        <item>Gargalianoi</item>
+        <item>Giannitsa</item>
+        <item>Goumenissa</item>
+        <item>Grevena</item>
+        <item>Ierapetra</item>
+        <item>Ioannina</item>
+        <item>Kalamata</item>
+        <item>Kalampaka</item>
+        <item>Kallithea</item>
+        <item>Kalymnos</item>
+        <item>Karditsa</item>
+        <item>Karpenisi</item>
+        <item>Karystos</item>
         <item>Kastoria</item>
         <item>Katerini</item>
-        <item>Drama</item>
-        <item>Kalampaka</item>
-        <item>Polygyros</item>
-        <item>Karditsa</item>
-        <item>Amfissa</item>
-        <item>Sparti</item>
-        <item>Nikaia</item>
-        <item>Rethymno</item>
-        <item>Florina</item>
-        <item>Grevena</item>
-        <item>Thivai</item>
-        <item>Chalkida</item>
-        <item>Giannitsa</item>
-        <item>Mytilini</item>
-        <item>Malia</item>
         <item>Kilkis</item>
-        <item>Pella</item>
-        <item>Ptolemaida</item>
-        <item>Paros</item>
-        <item>Ierapetra</item>
-        <item>Siteia</item>
-        <item>Karpenisi</item>
-        <item>Deskati</item>
+        <item>Korinthos</item>
         <item>Kos</item>
-        <item>Astros</item>
-        <item>Loutraki</item>
-        <item>Naxos</item>
-        <item>Eretria</item>
-        <item>Megalopoli</item>
-        <item>Tinos</item>
-        <item>Nemea</item>
-        <item>Nafplio</item>
-        <item>Poros</item>
-        <item>Goumenissa</item>
-        <item>Gargalianoi</item>
-        <item>Karystos</item>
-        <item>Lixourion</item>
-        <item>Argos Orestiko</item>
-        <item>Vonitsa</item>
-        <item>Ormilia</item>
-        <item>Didymoteicho</item>
-        <item>Vathy</item>
+        <item>Lamia</item>
         <item>Livadeia</item>
-        <item>Filiatra</item>
+        <item>Lixourion</item>
+        <item>Loutraki</item>
+        <item>Malia</item>
+        <item>Megalopoli</item>
+        <item>Mytilini</item>
         <item>Nafpaktos</item>
+        <item>Nafplio</item>
+        <item>Naxos</item>
+        <item>Nemea</item>
+        <item>Nikaia</item>
+        <item>Ormilia</item>
+        <item>Pallini</item>
+        <item>Paros</item>
+        <item>Patra</item>
+        <item>Pella</item>
+        <item>Polygyros</item>
+        <item>Poros</item>
+        <item>Ptolemaida</item>
+        <item>Pylos</item>
+        <item>Pyrgos</item>
+        <item>Rethymno</item>
+        <item>Rodos</item>
+        <item>Siteia</item>
+        <item>Sparti</item>
+        <item>Thessaloniki</item>
+        <item>Thivai</item>
+        <item>Tinos</item>
+        <item>Trikala</item>
+        <item>Tripoli</item>
+        <item>Vathy</item>
+        <item>Vonitsa</item>
+
 
     </string-array>
 
     <string-array name="pref_cities_city_codes">
-        <item>736928</item>
-        <item>255971</item>
-        <item>252664</item>
-        <item>261414</item>
-        <item>255683</item>
-        <item>260114</item>
-        <item>261779</item>
-        <item>258620</item>
-        <item>259289</item>
-        <item>261604</item>
         <item>265533</item>
-        <item>400666</item>
-        <item>261507</item>
-        <item>252601</item>
+        <item>736928</item>
+        <item>265187</item>
+        <item>736754</item>
         <item>264559</item>
-        <item>255229</item>
-        <item>255293</item>
+        <item>264396</item>
+        <item>264371</item>
+        <item>260133</item>
+        <item>260114</item>
+        <item>263166</item>
+        <item>736447</item>
+        <item>736364</item>
+        <item>262628</item>
+        <item>262418</item>
+        <item>736229</item>
+        <item>262104</item>
+        <item>733776</item>
+        <item>736166</item>
+        <item>736151</item>
+        <item>261814</item>
+        <item>261779</item>
+        <item>261604</item>
+        <item>261601</item>
+        <item>261414</item>
+        <item>261507</item>
+        <item>260989</item>
+        <item>260891</item>
+        <item>260935</item>
         <item>735927</item>
         <item>735914</item>
-        <item>736364</item>
-        <item>261601</item>
-        <item>734517</item>
-        <item>260989</item>
-        <item>265187</item>
-        <item>253394</item>
-        <item>256429</item>
-        <item>254352</item>
-        <item>736229</item>
-        <item>736151</item>
-        <item>252910</item>
-        <item>260133</item>
-        <item>733776</item>
-        <item>256866</item>
-        <item>257859</item>
         <item>735736</item>
-        <item>734726</item>
-        <item>734426</item>
-        <item>255721</item>
-        <item>261814</item>
-        <item>253759</item>
-        <item>260891</item>
-        <item>263166</item>
+        <item>259289</item>
         <item>259245</item>
-        <item>264396</item>
-        <item>258066</item>
-        <item>256632</item>
-        <item>262628</item>
-        <item>257395</item>
-        <item>252854</item>
-        <item>256558</item>
-        <item>256637</item>
-        <item>254865</item>
-        <item>736166</item>
-        <item>262104</item>
-        <item>260935</item>
-        <item>258175</item>
-        <item>736754</item>
-        <item>251823</item>
-        <item>734868</item>
-        <item>736447</item>
-        <item>252166</item>
+        <item>258620</item>
         <item>258463</item>
-        <item>262418</item>
+        <item>258175</item>
+        <item>258066</item>
+        <item>257859</item>
+        <item>257395</item>
+        <item>256866</item>
         <item>256639</item>
+        <item>256637</item>
+        <item>256632</item>
+        <item>256558</item>
+        <item>256429</item>
+        <item>734868</item>
+        <item>255971</item>
+        <item>255721</item>
+        <item>255683</item>
+        <item>734726</item>
+        <item>734517</item>
+        <item>254865</item>
+        <item>734426</item>
+        <item>255293</item>
+        <item>255229</item>
+        <item>254352</item>
+        <item>400666</item>
+        <item>253759</item>
+        <item>253394</item>
+        <item>437077</item>
+        <item>252910</item>
+        <item>252854</item>
+        <item>252664</item>
+        <item>252601</item>
+        <item>252166</item>
+        <item>251823</item>
+
     </string-array>
 
 </resources>
