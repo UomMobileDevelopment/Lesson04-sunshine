@@ -2,6 +2,7 @@ package com.example.android.sunshine.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,6 +33,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ForecastFragment extends Fragment {
@@ -70,9 +73,24 @@ public class ForecastFragment extends Fragment {
 
     private void updateWeather() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        String location = prefs.getString(getString(R.string.pref_location_key), getString(R.string.pref_location_default));
+        String location = prefs.getString(getString(R.string.pref_location_list_key), getString(R.string.pref_location_default));
         FetchWeatherTask weatherTask = new FetchWeatherTask();
         weatherTask.execute(location);
+
+        showToast(location);
+    }
+
+    private void showToast(String location){
+        Resources res = getResources();
+        String[] cityCodes = res.getStringArray(R.array.pref_cities_city_codes);
+        String[] cityNames = res.getStringArray(R.array.pref_cities_names);
+
+        List<String> list = Arrays.asList(cityCodes);
+        int index = list.indexOf(location);
+        String cityName = cityNames[index];
+        String toastText = "Showing weather for "+cityName;
+        Toast toast = Toast.makeText(getActivity(), toastText, Toast.LENGTH_LONG);
+        toast.show();
     }
 
     @Override

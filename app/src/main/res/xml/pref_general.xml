@@ -12,6 +12,15 @@
         ></EditTextPreference>
 
     <ListPreference
+        android:key="@string/pref_location_list_key"
+        android:defaultValue="@string/pref_location_default"
+        android:title="@string/pref_location_label"
+        android:entries="@array/pref_cities_names"
+        android:entryValues="@array/pref_cities_city_codes"
+        >
+    </ListPreference>
+
+    <ListPreference
         android:key="@string/pref_temp_units_key"
         android:defaultValue="@string/pref_temp_units_celcius"
         android:title="@string/pref_temp_units_label"
