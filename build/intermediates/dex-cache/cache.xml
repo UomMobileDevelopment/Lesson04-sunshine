@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-9edc86ed01fe9d99b4fff9c894ca8354864a03da.jar" />
-    </item>
-    <item
-        jar="C:\Users\user\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
-        jumboMode="false"
-        revision="24.0.2"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-00e6acee1b70c9c4093c92e1e29cbe0e6be5009a.jar" />
-    </item>
-    <item
-        jar="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jar="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
         jumboMode="false"
         revision="24.0.2"
         sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\classes-2028fccd3ab0ecb8ed75dbab6785b475d0dab5bd.jar" />
+        <dex dex="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\classes-792192e303251d2f922cd235b00293c5134c9824.jar" />
     </item>
     <item
-        jar="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jar="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
         jumboMode="false"
         revision="24.0.2"
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="C:\Users\user\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\classes-fca44f43ff4ad4497c4b981ba91e5c1597b05ecd.jar" />
+        <dex dex="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\classes-3d69bb688dd598e90df9611608cccba4d9f8e490.jar" />
+    </item>
+    <item
+        jar="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-48644641228032192183fc22692fa93a270c1729.jar" />
+    </item>
+    <item
+        jar="H:\Android_SDK\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="C:\Users\Thodoris\AndroidStudioProjects\Lesson04-sunshine\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-aa59d63c0a9c66eaf6d68d25224953ce95a7f850.jar" />
     </item>
 
 </items>

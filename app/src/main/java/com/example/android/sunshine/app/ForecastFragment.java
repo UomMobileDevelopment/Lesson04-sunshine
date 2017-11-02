@@ -169,10 +169,9 @@ public class ForecastFragment extends Fragment {
             // now we work exclusively in UTC
             dayTime = new Time();
 
-
-            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-            String tempUnit = prefs.getString(getString(R.string.pref_temp_units_key),
-                    getString(R.string.pref_temp_units_celcius));
+            /*
+               Weather unit from Preferences:
+             */
 
             String[] resultStrs = new String[numDays];
             for(int i = 0; i < weatherArray.length(); i++) {
@@ -202,7 +201,7 @@ public class ForecastFragment extends Fragment {
                 double high = temperatureObject.getDouble(OWM_MAX);
                 double low = temperatureObject.getDouble(OWM_MIN);
 
-                highAndLow = formatHighLows(high, low, tempUnit);
+                highAndLow = formatHighLows(high, low, "C");
                 resultStrs[i] = day + " - " + description + " - " + highAndLow;
             }
 
