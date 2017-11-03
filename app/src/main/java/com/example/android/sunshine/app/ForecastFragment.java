@@ -1,5 +1,6 @@
 package com.example.android.sunshine.app;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -14,8 +15,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -95,6 +98,16 @@ public class ForecastFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                final String item = mForecastAdapter.getItem(position);
+                Intent intent = new Intent(getActivity(), DetailActivity.class);
+                intent.putExtra(Intent.EXTRA_TEXT, item);
+                startActivity(intent);
+            }
+        });
+
         return rootView;
     }
 
@@ -173,6 +186,11 @@ public class ForecastFragment extends Fragment {
                Weather unit from Preferences:
              */
 
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+            String tempUnit = prefs.getString(getString(R.string.pref_temp_units_key),
+                    getString(R.string.pref_temp_units_celcius));
+
+
             String[] resultStrs = new String[numDays];
             for(int i = 0; i < weatherArray.length(); i++) {
                 // For now, using the format "Day, description, hi/low"
@@ -201,7 +219,7 @@ public class ForecastFragment extends Fragment {
                 double high = temperatureObject.getDouble(OWM_MAX);
                 double low = temperatureObject.getDouble(OWM_MIN);
 
-                highAndLow = formatHighLows(high, low, "C");
+                highAndLow = formatHighLows(high, low, tempUnit);
                 resultStrs[i] = day + " - " + description + " - " + highAndLow;
             }
 
